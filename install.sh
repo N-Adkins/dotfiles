@@ -5,6 +5,7 @@ SCRIPT=$(readlink -f "$0")
 DIR=$(dirname "$SCRIPT")
 
 DOTFILES=(
+    ".bashrc"
     ".tmux.conf"
     ".config/nvim"
 )
