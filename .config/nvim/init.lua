@@ -4,7 +4,7 @@ require('plugins')
 require('options')
 require('cmp_options')
 require('mason_config')
-require('telescope')
+require('telescope_config')
 require('treesitter')
 
 require('lualine').setup({

@@ -19,10 +19,10 @@ cmp.setup({
       ['<S-Tab>'] = cmp.mapping.select_prev_item(),
     }),
     sources = {
-        { name = "nvim_lsp" },
-        { name = "snippy" },
-        { name = "buffer" },
-        { name = "path" },
+        { name = "nvim_lsp", max_item_count = 4 },
+        { name = "snippy", max_item_count = 4 },
+        { name = "buffer", max_item_count = 4 },
+        { name = "path", max_item_count = 4 },
     },
     formatting = {
         format = function(entry, vim_item)

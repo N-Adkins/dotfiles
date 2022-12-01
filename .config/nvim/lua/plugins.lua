@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
 	-- LSP
 	use 'neovim/nvim-lspconfig'
 	use 'williamboman/mason.nvim'
+    use 'simrat39/rust-tools.nvim'
 
     -- Telescope
     use 'nvim-lua/popup.nvim'
