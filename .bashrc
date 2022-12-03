@@ -120,3 +120,12 @@ export NVM_DIR="/home/$USER/.nvm"
 
 export DISPLAY=localhost:0.0
 export PS1="[\u@\h] \[$(tput sgr0)\]\[\033[38;5;193m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;167m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\n\\$ \[$(tput sgr0)\]"
+
+# Change default CXX and CC compiler to clang if it is installed, mainly for CMake
+if test -f "/usr/bin/clang"; then
+    export CC=/usr/bin/clang
+fi
+
+if test -f "/usr/bin/clang++"; then
+    export CXX=/usr/bin/clang++
+fi
